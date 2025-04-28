@@ -1,1 +1,0 @@
-/home/joshua/Desktop/ros2_ws/build/so100_robot/ament_cmake_core/so100_robotConfig.cmake

@@ -1,1 +1,0 @@
-/home/joshua/Desktop/ros2_ws/src/so100_robot/launch/spawn.launch.py

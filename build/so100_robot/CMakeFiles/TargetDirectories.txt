@@ -1,9 +1,0 @@
-/home/joshua/Desktop/ros2_ws/build/so100_robot/CMakeFiles/uninstall.dir
-/home/joshua/Desktop/ros2_ws/build/so100_robot/CMakeFiles/so100_robot_uninstall.dir
-/home/joshua/Desktop/ros2_ws/build/so100_robot/CMakeFiles/test.dir
-/home/joshua/Desktop/ros2_ws/build/so100_robot/CMakeFiles/edit_cache.dir
-/home/joshua/Desktop/ros2_ws/build/so100_robot/CMakeFiles/rebuild_cache.dir
-/home/joshua/Desktop/ros2_ws/build/so100_robot/CMakeFiles/list_install_components.dir
-/home/joshua/Desktop/ros2_ws/build/so100_robot/CMakeFiles/install.dir
-/home/joshua/Desktop/ros2_ws/build/so100_robot/CMakeFiles/install/local.dir
-/home/joshua/Desktop/ros2_ws/build/so100_robot/CMakeFiles/install/strip.dir
