@@ -1,0 +1,18 @@
+-- Install configuration: ""
+-- Execute custom install script
+-- Up-to-date symlink: /home/joshua/Desktop/ros2_ws/install/so100_robot/share/so100_robot/launch/spawn.launch.py
+-- Up-to-date symlink: /home/joshua/Desktop/ros2_ws/install/so100_robot/share/ament_index/resource_index/package_run_dependencies/so100_robot
+-- Up-to-date symlink: /home/joshua/Desktop/ros2_ws/install/so100_robot/share/ament_index/resource_index/parent_prefix_path/so100_robot
+-- Up-to-date symlink: /home/joshua/Desktop/ros2_ws/install/so100_robot/share/so100_robot/environment/ament_prefix_path.sh
+-- Up-to-date symlink: /home/joshua/Desktop/ros2_ws/install/so100_robot/share/so100_robot/environment/ament_prefix_path.dsv
+-- Up-to-date symlink: /home/joshua/Desktop/ros2_ws/install/so100_robot/share/so100_robot/environment/path.sh
+-- Up-to-date symlink: /home/joshua/Desktop/ros2_ws/install/so100_robot/share/so100_robot/environment/path.dsv
+-- Up-to-date symlink: /home/joshua/Desktop/ros2_ws/install/so100_robot/share/so100_robot/local_setup.bash
+-- Up-to-date symlink: /home/joshua/Desktop/ros2_ws/install/so100_robot/share/so100_robot/local_setup.sh
+-- Up-to-date symlink: /home/joshua/Desktop/ros2_ws/install/so100_robot/share/so100_robot/local_setup.zsh
+-- Up-to-date symlink: /home/joshua/Desktop/ros2_ws/install/so100_robot/share/so100_robot/local_setup.dsv
+-- Symlinking: /home/joshua/Desktop/ros2_ws/install/so100_robot/share/so100_robot/package.dsv
+-- Up-to-date symlink: /home/joshua/Desktop/ros2_ws/install/so100_robot/share/ament_index/resource_index/packages/so100_robot
+-- Up-to-date symlink: /home/joshua/Desktop/ros2_ws/install/so100_robot/share/so100_robot/cmake/so100_robotConfig.cmake
+-- Up-to-date symlink: /home/joshua/Desktop/ros2_ws/install/so100_robot/share/so100_robot/cmake/so100_robotConfig-version.cmake
+-- Up-to-date symlink: /home/joshua/Desktop/ros2_ws/install/so100_robot/share/so100_robot/package.xml

@@ -1,0 +1,22 @@
+[0.012s] Invoking command in '/home/joshua/Desktop/ros2_ws/build/so100_robot': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble PS1=\u@\h:\w $(parse_git_branch)\$ /usr/bin/cmake --build /home/joshua/Desktop/ros2_ws/build/so100_robot -- -j12 -l12
+[0.050s] Invoked command in '/home/joshua/Desktop/ros2_ws/build/so100_robot' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble PS1=\u@\h:\w $(parse_git_branch)\$ /usr/bin/cmake --build /home/joshua/Desktop/ros2_ws/build/so100_robot -- -j12 -l12
+[0.058s] Invoking command in '/home/joshua/Desktop/ros2_ws/build/so100_robot': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble PS1=\u@\h:\w $(parse_git_branch)\$ /usr/bin/cmake --install /home/joshua/Desktop/ros2_ws/build/so100_robot
+[0.065s] -- Install configuration: ""
+[0.065s] -- Execute custom install script
+[0.065s] -- Up-to-date symlink: /home/joshua/Desktop/ros2_ws/install/so100_robot/share/so100_robot/launch/spawn.launch.py
+[0.066s] -- Up-to-date symlink: /home/joshua/Desktop/ros2_ws/install/so100_robot/share/ament_index/resource_index/package_run_dependencies/so100_robot
+[0.066s] -- Up-to-date symlink: /home/joshua/Desktop/ros2_ws/install/so100_robot/share/ament_index/resource_index/parent_prefix_path/so100_robot
+[0.066s] -- Up-to-date symlink: /home/joshua/Desktop/ros2_ws/install/so100_robot/share/so100_robot/environment/ament_prefix_path.sh
+[0.066s] -- Up-to-date symlink: /home/joshua/Desktop/ros2_ws/install/so100_robot/share/so100_robot/environment/ament_prefix_path.dsv
+[0.066s] -- Up-to-date symlink: /home/joshua/Desktop/ros2_ws/install/so100_robot/share/so100_robot/environment/path.sh
+[0.066s] -- Up-to-date symlink: /home/joshua/Desktop/ros2_ws/install/so100_robot/share/so100_robot/environment/path.dsv
+[0.067s] -- Up-to-date symlink: /home/joshua/Desktop/ros2_ws/install/so100_robot/share/so100_robot/local_setup.bash
+[0.067s] -- Up-to-date symlink: /home/joshua/Desktop/ros2_ws/install/so100_robot/share/so100_robot/local_setup.sh
+[0.067s] -- Up-to-date symlink: /home/joshua/Desktop/ros2_ws/install/so100_robot/share/so100_robot/local_setup.zsh
+[0.067s] -- Up-to-date symlink: /home/joshua/Desktop/ros2_ws/install/so100_robot/share/so100_robot/local_setup.dsv
+[0.067s] -- Symlinking: /home/joshua/Desktop/ros2_ws/install/so100_robot/share/so100_robot/package.dsv
+[0.077s] -- Up-to-date symlink: /home/joshua/Desktop/ros2_ws/install/so100_robot/share/ament_index/resource_index/packages/so100_robot
+[0.077s] -- Up-to-date symlink: /home/joshua/Desktop/ros2_ws/install/so100_robot/share/so100_robot/cmake/so100_robotConfig.cmake
+[0.077s] -- Up-to-date symlink: /home/joshua/Desktop/ros2_ws/install/so100_robot/share/so100_robot/cmake/so100_robotConfig-version.cmake
+[0.077s] -- Up-to-date symlink: /home/joshua/Desktop/ros2_ws/install/so100_robot/share/so100_robot/package.xml
+[0.079s] Invoked command in '/home/joshua/Desktop/ros2_ws/build/so100_robot' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble PS1=\u@\h:\w $(parse_git_branch)\$ /usr/bin/cmake --install /home/joshua/Desktop/ros2_ws/build/so100_robot

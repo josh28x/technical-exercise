@@ -9,7 +9,7 @@ def generate_launch_description():
             name='robot_state_publisher',
             output='screen',
             parameters=[{'robot_description': open(
-                '/home/joshua/Desktop/ros2_ws/src/so100_robot/urdf/SO_5DOF_ARM100_8j_URDF.SLDASM.urdf').read()}]
+                '/home/joshua/Desktop/ros2_ws/src/so100_robot/urdf/SO_5DOF_ARM100_8j_URDF.SLDASM.urdf', 'rb').read().decode('utf-8')}]
         ),
         Node(
             package='gazebo_ros',
