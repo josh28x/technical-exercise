@@ -29,4 +29,8 @@ install(DIRECTORY launch
   DESTINATION share/${PROJECT_NAME}
 )
 
+install(DIRECTORY meshes
+  DESTINATION share/${PROJECT_NAME}
+)
+
 ament_package()
