@@ -13,7 +13,7 @@ def generate_launch_description():
     package_dir = get_package_share_directory('so_arm_description')
     
     # Path to the URDF file
-    urdf_path = os.path.join(os.path.dirname(package_dir), 'SO_5DOF_ARM100_8j_URDF.SLDASM', 'urdf', 'SO_5DOF_ARM100_8j_URDF.SLDASM.urdf')
+    urdf_path = '/home/joshua/Desktop/technical-exercise/parta_workspace/src/SO_5DOF_ARM100_8j_URDF.SLDASM/urdf/SO_5DOF_ARM100_8j_URDF.SLDASM.urdf'
     
     # Check if the URDF file exists
     if not os.path.exists(urdf_path):
