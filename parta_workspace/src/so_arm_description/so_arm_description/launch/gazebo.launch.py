@@ -15,6 +15,10 @@ def generate_launch_description():
     # Path to the URDF file
     urdf_path = '/home/joshua/Desktop/technical-exercise/parta_workspace/src/SO_5DOF_ARM100_8j_URDF.SLDASM/urdf/SO_5DOF_ARM100_8j_URDF.SLDASM.urdf'
     
+    # Path to the world file
+    world_path = '/home/joshua/Desktop/technical-exercise/parta_workspace/src/so_arm_description/worlds/default.world'
+    
+    
     # Check if the URDF file exists
     if not os.path.exists(urdf_path):
         raise FileNotFoundError(f"URDF file not found at {urdf_path}")
