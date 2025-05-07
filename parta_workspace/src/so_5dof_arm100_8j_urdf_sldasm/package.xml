@@ -5,12 +5,17 @@
   <author>TODO</author>
   <maintainer email="joshua@email.com"> Joshua Lara </maintainer>
   <license>BSD</license>
+
   <buildtool_depend>ament_cmake</buildtool_depend>
+
   <depend>robot_state_publisher</depend>
   <depend>rviz</depend>
   <depend>joint_state_publisher_gui</depend>
   <depend>gazebo_ros</depend>
+
   <export>
+    <build_type>ament_cmake</build_type>
     <architecture_independent />
   </export>
 </package>
+
