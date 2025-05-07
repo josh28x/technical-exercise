@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.5)
 
-project(SO_5DOF_ARM100_8j_URDF.SLDASM)
+project(so_5dof_arm100_8j_urdf_sldasm)
 
 find_package(ament_cmake REQUIRED)
 
