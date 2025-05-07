@@ -13,10 +13,18 @@ def generate_launch_description():
     package_dir = get_package_share_directory('so_arm_description')
     
     # Path to the URDF file
-    urdf_path = '/home/joshua/Desktop/technical-exercise/parta_workspace/src/SO_5DOF_ARM100_8j_URDF.SLDASM/urdf/SO_5DOF_ARM100_8j_URDF.SLDASM.urdf'
+    urdf_path = os.path.join(
+    get_package_share_directory('so_5dof_arm100_8j_urdf_sldasm'),
+    'urdf',
+    'so_5dof_arm100_8j_urdf_sldasm.urdf'
+)
     
     # Path to the world file
-    world_path = '/home/joshua/Desktop/technical-exercise/parta_workspace/src/so_arm_description/worlds/default.world'
+    world_path = os.path.join(
+    get_package_share_directory('so_arm_description'),
+    'worlds',
+    'default.world'
+)
     
     
     # Check if the URDF file exists
