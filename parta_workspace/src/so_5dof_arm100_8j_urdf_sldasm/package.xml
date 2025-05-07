@@ -1,15 +1,11 @@
 <package format="2">
   <name>so_5dof_arm100_8j_urdf_sldasm</name>
   <version>1.0.0</version>
-  <description>
-    <p>URDF Description package for SO_5DOF_ARM100_8j_URDF.SLDASM</p>
-    <p>This package contains configuration data, 3D models, and launch files for the robot.</p>
-  </description>
+  <description>URDF description package for SO 5DOF ARM100 8J</description>
   <author>TODO</author>
-  <maintainer email="TODO@email.com" />
+  <maintainer email="joshua@email.com"> Joshua Lara </maintainer>
   <license>BSD</license>
   <buildtool_depend>ament_cmake</buildtool_depend>
-  <depend>roslaunch</depend>
   <depend>robot_state_publisher</depend>
   <depend>rviz</depend>
   <depend>joint_state_publisher_gui</depend>
