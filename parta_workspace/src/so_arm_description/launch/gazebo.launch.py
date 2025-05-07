@@ -6,7 +6,6 @@ from launch import LaunchDescription
 from launch.actions import IncludeLaunchDescription, ExecuteProcess
 from launch.launch_description_sources import PythonLaunchDescriptionSource
 from launch_ros.actions import Node
-from launch.substitutions import LaunchConfiguration
 
 def generate_launch_description():
     # Get the package directory
@@ -14,32 +13,40 @@ def generate_launch_description():
     
     # Path to the URDF file
     urdf_path = os.path.join(
-    get_package_share_directory('so_5dof_arm100_8j_urdf_sldasm'),
-    'urdf',
-    'so_5dof_arm100_8j_urdf_sldasm.urdf'
-)
+        get_package_share_directory('so_5dof_arm100_8j_urdf_sldasm'),
+        'urdf',
+        'so_5dof_arm100_8j_urdf_sldasm.urdf'
+    )
     
     # Path to the world file
     world_path = os.path.join(
-    get_package_share_directory('so_arm_description'),
-    'worlds',
-    'default.world'
-)
-    
+        get_package_share_directory('so_arm_description'),
+        'worlds',
+        'default.world'
+    )
     
     # Check if the URDF file exists
     if not os.path.exists(urdf_path):
         raise FileNotFoundError(f"URDF file not found at {urdf_path}")
     
-    # Configure Gazebo
+    # Launch Gazebo server with world
     gazebo = IncludeLaunchDescription(
-    PythonLaunchDescriptionSource([
-        os.path.join(get_package_share_directory('gazebo_ros'), 'launch', 'gazebo.launch.py')
-    ]),
-    launch_arguments={'world': world_path}.items()
-)
+        PythonLaunchDescriptionSource([
+            os.path.join(get_package_share_directory('gazebo_ros'), 'launch', 'gazebo.launch.py')
+        ]),
+        launch_arguments={
+            'world': world_path,
+            'extra_gazebo_args': ''
+        }.items()
+    )
 
-    # Spawn the robot
+    # Launch gzclient manually to ensure GUI opens
+    gzclient = ExecuteProcess(
+        cmd=['gzclient'],
+        output='screen'
+    )
+
+    # Spawn the robot into Gazebo
     spawn_entity = Node(
         package='gazebo_ros',
         executable='spawn_entity.py',
@@ -48,12 +55,12 @@ def generate_launch_description():
             '-file', urdf_path,
             '-x', '0.0',
             '-y', '0.0',
-            '-z', '0.0'
+            '-z', '1.0'
         ],
         output='screen',
     )
     
-    # Static Transform Publisher (replaces tf_footprint_base node from ROS1)
+    # Static transform publisher
     static_tf = Node(
         package='tf2_ros',
         executable='static_transform_publisher',
@@ -64,6 +71,8 @@ def generate_launch_description():
     # Return the LaunchDescription
     return LaunchDescription([
         gazebo,
+        gzclient,
         static_tf,
         spawn_entity,
     ])
+

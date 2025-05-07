@@ -1,8 +1,11 @@
 <?xml version="1.0" ?>
-<sdf version="1.6">
+<sdf version="1.7">
   <world name="default">
     <!-- Include the Gazebo ROS Factory plugin -->
     <plugin name="gazebo_ros_factory" filename="libgazebo_ros_factory.so"/>
+    <plugin name="gazebo_ros_state" filename="libgazebo_ros_state.so"/>
+    <plugin name="gazebo_ros_init" filename="libgazebo_ros_init.so"/>
+
 
     <!-- Add other world configurations here, such as lighting, ground plane, etc. -->
     <include>
