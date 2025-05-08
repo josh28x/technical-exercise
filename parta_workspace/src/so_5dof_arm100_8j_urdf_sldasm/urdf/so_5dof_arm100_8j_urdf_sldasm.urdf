@@ -361,4 +361,70 @@
     <axis
       xyz="0 0 1" />
   </joint>
+  
+  <ros2_control name="GazeboSystem" type="system">
+  <hardware>
+    <plugin>gazebo_ros2_control/GazeboSystem</plugin>
+  </hardware>
+  
+  <joint name="Rotation">
+    <command_interface name="position">
+      <param name="min">-3.14</param>
+      <param name="max">3.14</param>
+    </command_interface>
+    <state_interface name="position"/>
+    <state_interface name="velocity"/>
+  </joint>
+  
+  <joint name="Pitch">
+    <command_interface name="position">
+      <param name="min">-3.14</param>
+      <param name="max">3.14</param>
+    </command_interface>
+    <state_interface name="position"/>
+    <state_interface name="velocity"/>
+  </joint>
+  
+  <joint name="Elbow">
+    <command_interface name="position">
+      <param name="min">-3.14</param>
+      <param name="max">3.14</param>
+    </command_interface>
+    <state_interface name="position"/>
+    <state_interface name="velocity"/>
+  </joint>
+  
+  <joint name="Wrist_Pitch">
+    <command_interface name="position">
+      <param name="min">-3.14</param>
+      <param name="max">3.14</param>
+    </command_interface>
+    <state_interface name="position"/>
+    <state_interface name="velocity"/>
+  </joint>
+  
+  <joint name="Wrist_Roll">
+    <command_interface name="position">
+      <param name="min">-3.14</param>
+      <param name="max">3.14</param>
+    </command_interface>
+    <state_interface name="position"/>
+    <state_interface name="velocity"/>
+  </joint>
+  
+  <joint name="Jaw">
+    <command_interface name="position">
+      <param name="min">-3.14</param>
+      <param name="max">3.14</param>
+    </command_interface>
+    <state_interface name="position"/>
+    <state_interface name="velocity"/>
+  </joint>
+</ros2_control>
+
+<gazebo>
+  <plugin filename="libgazebo_ros2_control.so" name="gazebo_ros2_control">
+    <parameters>$(find so_arm_description)/config/controllers.yaml</parameters>
+  </plugin>
+</gazebo>
 </robot>
