@@ -11,12 +11,12 @@ controller_manager:
 so_arm_controller:
   ros__parameters:
     joints:
-      - joint_base_rotation_pitch
-      - joint_rotation_pitch_upper_arm
-      - joint_upper_arm_lower_arm
-      - joint_lower_arm_wrist_pitch_roll
-      - joint_wrist_pitch_roll_gripper
-      - joint_fixed_jaw_moving_jaw
+      - Rotation
+      - Pitch
+      - Elbow
+      - Wrist_Pitch
+      - Wrist_Roll
+      - Jaw
     command_interfaces:
       - position
     state_interfaces:
