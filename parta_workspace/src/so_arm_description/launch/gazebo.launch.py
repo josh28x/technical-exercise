@@ -36,7 +36,7 @@ def generate_launch_description():
         ]),
         launch_arguments={
             'world': world_path,
-            'extra_gazebo_args': ''
+            'extra_gazebo_args': '--verbose'
         }.items()
     )
 
