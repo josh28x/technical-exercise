@@ -365,13 +365,7 @@
   
 
 <gazebo>
-  <plugin name="gazebo_ros_joint_pose_trajectory" filename="libgazebo_ros_joint_pose_trajectory.so">
-    <robotNamespace>/so_arm</robotNamespace>
-    <topicName>joint_trajectory</topicName>
-    <updateRate>100</updateRate>
-  </plugin>
-  
-  <plugin name="joint_state_publisher" filename="libgazebo_ros_joint_state_publisher.so">
+  <plugin name="gazebo_ros_joint_state_publisher" filename="libgazebo_ros_joint_state_publisher.so">
     <joint_name>Rotation</joint_name>
     <joint_name>Pitch</joint_name>
     <joint_name>Elbow</joint_name>
@@ -379,6 +373,11 @@
     <joint_name>Wrist_Roll</joint_name>
     <joint_name>Jaw</joint_name>
     <update_rate>50</update_rate>
+  </plugin>
+  
+  <plugin name="gazebo_ros_joint_state_controller" filename="libgazebo_ros_joint_state_controller.so">
+    <robotNamespace>/so_arm</robotNamespace>
+    <publishRate>50</publishRate>
   </plugin>
 </gazebo>
 
